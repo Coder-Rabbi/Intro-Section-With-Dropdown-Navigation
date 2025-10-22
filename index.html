@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+
+  <div class="main-container">
+
+    <header>
+
+      <nav class="navbar">
+        <div class="navbar_logo">
+          <img src="images/logo.svg" alt="logo" class="logo">
+        </div>
+
+        <div class="navbar_links ds-flex">
+          <ul class="links ds-flex">
+            
+            <li class="features_main-list  main-list">
+              <div class="features mainMenu ds-flex">
+                <a class="features_main-menu" href="#">Features</a>
+                <svg class="down-arrow" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path  stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+              </div>
+              
+              <ul class="dropdown-menu features-dropdown">
+                <li class="ds-flex dropdown-list">
+                  <img src="images/icon-todo.svg" alt="icon-todo">
+                  <a class="drop-menu" href="#">Todo List</a>
+                </li>
+                
+                <li class="ds-flex dropdown-list">
+                  <img src="images/icon-calendar.svg" alt="icon-calendar">
+                  <a class="drop-menu" href="#">Calendar</a>
+                </li>
+
+                <li class="ds-flex dropdown-list">
+                  <img src="images/icon-reminders.svg" alt="icon-reminders">
+                  <a class="drop-menu" href="#">Reminders</a>
+                </li> 
+                               
+                <li class="ds-flex dropdown-list">
+                  <img src="images/icon-planning.svg" alt="icon-planning">
+                  <a class="drop-menu" href="#">Planning</a>
+                </li>
+              </ul>            
+            </li>
+            
+            <li class="company_main-list main-list">
+              <div class="company mainMenu ds-flex">
+                <a class=" company_main-menu" href="#">Company</a>
+                <svg class="down-arrow" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path  stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+              </div>
+
+              <ul class="dropdown-menu company-dropdown">
+                <li><a class="drop-menu" href="#">History</a></li>
+                <li><a class="drop-menu" href="#">Our Team</a></li>
+                <li><a class="drop-menu" href="#">Blog</a></li>
+              </ul>
+
+            </li>
+            <li><a class="main-menu" href="#">Careers</a></li>
+            <li><a class="main-menu" href="#">About</a></li>
+
+          </ul>
+
+          <img src="images/icon-close-menu.svg" alt="icon-close-menu" class="close_menu-icon hidden">
+
+          <div class="menu-button">
+            <button class="btn login-btn" id="loginBtn" type="button">Login</button>
+            <button class="btn register-btn" id="registerBtn" type="button">Register</button>
+          </div>
+        </div>
+
+        <img src="images/icon-menu.svg" alt="icon-menu" class="open_menu-icon hidden">
+      </nav>
+
+    </header>
+
+
+    <main>
+
+      <div class="main-component">
+
+        <div class="content">
+          <h1 class="title">Make <br class="line-break"> remote work</h1>
+          <p class="description">  
+            Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.
+          </p>
+          <button class="btn learn_more-btn" type="button">
+            <a href="#">Learn more</a>
+          </button>
+
+          <div class="company-logo">
+            <ul class="bottom-logo ds-flex">
+              <li><img src="images/client-databiz.svg" alt="client-databiz"></li>
+              <li><img src="images/client-audiophile.svg" alt="client-audiophile"></li>
+              <li><img src="images/client-meet.svg" alt="client-meet"></li>
+              <li><img src="images/client-maker.svg" alt="client-maker"></li>
+            </ul>           
+          </div>
+        </div>
+
+        <div class="image">
+          <img src="images/image-hero-desktop.png" alt="hero-desktop" class="desktop-hero">
+          <img src="images/image-hero-mobile.png" alt="hero-mobile" class="mobile-hero hidden">
+        </div>
+
+      </div>
+
+    </main>
+
+
+    <footer>
+      
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/Coder-Rabbi" target="_blank">Coder Rabbi</a>.
+      </div> 
+
+    </footer>
+
+  </div>
+
+  <script src="script/script.js"></script>
+
+</body>
+</html>

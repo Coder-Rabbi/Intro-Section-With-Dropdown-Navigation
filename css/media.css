@@ -1,0 +1,208 @@
+@media screen and (max-width: 1110px) {
+    .navbar{
+        gap: 3rem;
+    }
+    .links{
+        gap: 2rem;
+    }
+    .main-component{
+        padding-inline: 4rem;
+    }
+    .title{
+        font-size: 50px;
+    }    
+}
+
+@media screen and (max-width: 1000px) {
+    .main-component{
+        padding: 3rem;
+    }
+    .bottom-logo{
+        gap: 1rem;
+    }   
+}
+
+@media screen and (max-width: 900px) {
+    .main-component{
+        padding-inline: 2rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main-container{
+        width: 100%;
+    }
+    .hidden{
+        display: block;
+    }
+    .desktop-hero{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+        padding-block-start: 2.5rem;
+    }
+    .main-list{
+        padding-block-end: 0;
+    }
+    .main-menu,
+    .login-btn,.register-btn{
+        margin-block-end: 0;
+    }
+    .navbar,.main-component{
+        padding-inline: 2.5rem;
+    }
+    .logo{
+        padding-block-start: 0;
+    }
+    .navbar_links{
+        height: 100vh;
+        width: 65vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        padding: 2.5rem;
+        background-color: var(--cl-neutral-gray-50);
+        box-shadow: 0 20px 30px var(--cl-neutral-gray-500);
+        transform: translateX(100%);
+        opacity: 0;
+        transition: transform 0.6s ease, opacity 0.4s ease;
+        display: initial;
+    }
+    .navbar_links.open-sidebar{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .dropdown-menu{
+        position: relative;
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+        background-color: transparent;
+        display: none;
+        box-shadow: none;
+    }
+    .mainMenu.active + .dropdown-menu{
+        display: block;
+    }
+    .mainMenu.active .down-arrow{
+        transform: rotate(180deg);
+        stroke: hsl(0, 0%, 0%);
+    }
+    .no-scroll{
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .dropdown-menu:last-child,
+    .dropdown-list:last-child,
+    .company-dropdown li:last-child a{
+        padding-block-end: 0;
+    }
+    .features-dropdown{
+        left: auto;
+    }
+    .links{
+        margin-block-start: 3rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    .menu-button{
+        display: flex;
+        flex-direction: column;
+        padding-block-start: 2rem;
+    }
+    .close_menu-icon{
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+        z-index: 3;
+    }
+    .open_menu-icon,
+    .close_menu-icon{
+        cursor: pointer;
+    }
+    .main-component{
+        flex-direction: column;
+        gap: 3rem;
+        padding-block-end: 2rem;
+    }
+    .image{
+        order: 1;
+    }
+    .mobile-hero{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+    .content{
+        order: 2;
+        text-align: center;
+    }
+    .description{
+        text-align: center;
+        padding: 1rem 0 1.3rem 0;
+    }
+    .line-break{
+        display: none;
+    }
+    .learn_more-btn{
+        margin-block-end: 3rem;
+    }
+    .bottom-logo{
+        justify-content: center;
+    }
+    .company-logo img{
+        max-width: 100%;
+    }
+    .attribution{
+        display: none;
+    }  
+}
+
+
+@media screen and (max-width: 500px) {
+    .navbar{
+        padding: 1.5rem;
+    }
+    .links a,.btn{
+        font-size: 1rem;
+    }
+    .open_menu-icon,
+    .close_menu-icon{
+        height: 18px;
+        width: 30px;
+        object-fit: cover;
+    }
+    .close_menu-icon{
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+    .main-component{
+        padding: 0;
+        gap: 2rem;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .content{
+        padding-inline: 1.5rem;
+    }
+    .description{
+        font-size: 1rem;
+        /* padding: 0; */
+    } 
+}
+
+@media screen and (max-width: 374px) {
+    .links a,.description,.btn{
+        font-size: 14px;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    
+}
+
