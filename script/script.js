@@ -16,13 +16,14 @@ closeMenuBtn.addEventListener("click",() => {
 
 })
 
-const mainMenus = document.querySelectorAll(".mainMenu");
 
+const mainMenus = document.querySelectorAll(".mainMenu");
 mainMenus.forEach(mainMenu => {
     mainMenu.addEventListener("click", () => {
         mainMenu.classList.toggle("active");
     })
 } )
+
 
 window.addEventListener("resize", () => {
     if(window.innerWidth > 850){ 
@@ -32,4 +33,13 @@ window.addEventListener("resize", () => {
             mainContainer.classList.add("overlay");
         }
     }
+})
+
+
+const menuLinks = document.querySelectorAll(".links a");
+menuLinks.forEach(menu => {
+    menu.addEventListener("click",() => {
+        menuLinks.forEach(unActive => unActive.classList.remove("active"));
+        menu.classList.add("active");
+    })
 })

@@ -76,7 +76,10 @@
         opacity: 1;
         pointer-events: auto;
     }
-    .navbar_links a:active{
+    .links a.active{
+        color: var(--cl-neutral-gray-950);
+    }
+    .links a:active{
         color: var(--cl-neutral-gray-950);
         -webkit-tap-highlight-color: transparent;
     }
