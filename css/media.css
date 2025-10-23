@@ -79,10 +79,9 @@
     .links a.active{
         color: var(--cl-neutral-gray-950);
     }
-    .links a:active{
-        color: var(--cl-neutral-gray-950);
-        -webkit-tap-highlight-color: transparent;
-    }
+    .links a:active,
+    .features_main-menu:active,
+    .company_main-menu:active,
     .btn:active,
     .open_menu-icon:active,
     .close_menu-icon:active{
