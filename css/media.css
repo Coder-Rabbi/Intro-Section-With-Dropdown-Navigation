@@ -30,7 +30,8 @@
 
 @media screen and (max-width: 850px) {
     .main-container{
-        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
     }
     .hidden{
         display: block;
@@ -66,14 +67,25 @@
         background-color: var(--cl-neutral-gray-50);
         box-shadow: 0 20px 30px var(--cl-neutral-gray-500);
         transform: translateX(100%);
+        pointer-events: none;
         opacity: 0;
-        transition: transform 0.6s ease, opacity 0.4s ease;
         display: initial;
     }
     .navbar_links.open-sidebar{
         transform: translateX(0);
         opacity: 1;
+        pointer-events: auto;
     }
+    .navbar_links a:active{
+        color: var(--cl-neutral-gray-950);
+        -webkit-tap-highlight-color: transparent;
+    }
+    .btn:active,
+    .open_menu-icon:active,
+    .close_menu-icon:active{
+        -webkit-tap-highlight-color: transparent;
+    }
+
     .dropdown-menu{
         position: relative;
         transform: translateY(0);
@@ -149,17 +161,18 @@
         display: none;
     }
     .learn_more-btn{
-        margin-block-end: 3rem;
+        margin-block-end: 2rem;
     }
     .bottom-logo{
         justify-content: center;
     }
-    .company-logo img{
+    .bottom-logo li img{
         max-width: 100%;
     }
     .attribution{
         display: none;
-    }  
+    }
+
 }
 
 
@@ -190,9 +203,11 @@
     .content{
         padding-inline: 1.5rem;
     }
+    .company-logo{
+        padding-block-end: 1rem;
+    }
     .description{
         font-size: 1rem;
-        /* padding: 0; */
     } 
 }
 
@@ -202,7 +217,6 @@
     }
     .title{
         font-size: 1.5rem;
-    }
-    
+    }   
 }
 
