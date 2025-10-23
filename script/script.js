@@ -39,7 +39,12 @@ window.addEventListener("resize", () => {
 const menuLinks = document.querySelectorAll(".links a");
 menuLinks.forEach(menu => {
     menu.addEventListener("click",() => {
-        menuLinks.forEach(unActive => unActive.classList.remove("active"));
-        menu.classList.add("active");
+
+        if(menu.classList.contains("active")){
+            menu.classList.remove("active");
+        } else{
+            menuLinks.forEach(unActive => unActive.classList.remove("active"));
+            menu.classList.add("active");
+        }
     })
 })
