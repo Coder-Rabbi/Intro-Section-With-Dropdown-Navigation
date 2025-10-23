@@ -80,8 +80,7 @@
         color: var(--cl-neutral-gray-950);
     }
     .links a:active,
-    .features_main-menu:active,
-    .company_main-menu:active,
+    .mainMenu:active,
     .btn:active,
     .open_menu-icon:active,
     .close_menu-icon:active{
